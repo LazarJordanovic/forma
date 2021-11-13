@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forme Domaci</title>
+</head>
+<body>
+    <h2 style="text-align: center;">Domaci zadatak-Forme</h2>
+    <form action="" style="border: 2px solid black; padding: 20px; width: 500px;  margin:100px auto;">
+        <fieldset style="border: 3px solid red; font-size: 15px; font-weight: bold;">
+            <legend style="font-size: 25px;">Form Validation</legend>
+            <table>
+                <tr>
+                    <td><label for="name">Name:</label></td>
+                    <td><input type="text" id="name" name="ime" placeholder="Unesi ime" required/></td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="uname">Username:</label></td>
+                    <td><input type="text" id="uname" name="prezime" placeholder="Unesi prezime" required /></td>
+                </tr>
+                <tr>
+                    <td><label for="pass">Password:</label></td>
+                    <td><input type="password" id="pass" name="lozinka" placeholder="Unesi Lozinku" required></td>
+                </tr>
+                <tr>
+                    <td><label for="repass">Re-type password:</label></td>
+                    <td><input type="password" id="repass" name="repass" placeholder="Ponovo unesi lozinku" required></td>
+                </tr>
+                <tr>
+                    <td><label for="gander">Gander:</label></td>
+                    <td><input type="radio" name="gander" value="male" id="male">Male
+                    <input type="radio" name="gander" value="famale" id="famale">Famale
+                    <input type="radio" name="gander" value="other" id="other" checked>Other</td>
+                    
+                </tr>
+                <tr>
+                    <td><label for="pskils">Programming skills:</label></td>
+                    <td><input type="checkbox" name="java" id="java">Java
+                        <input type="checkbox" name="android" id="android">Android
+                        <input type="checkbox" name="ruby" id="ruby">Ruby
+                        <input type="checkbox" name=".net" id=".net">.Net</td>
+                </tr>
+                <tr>
+                    <td><label for="conum">Contact no:</label></td>
+                    <td><input type="text" id="conum" name="conum" placeholder="Unesi br tel" required></td>
+                </tr>
+                <tr>
+                    <td><label for="email">Email:</label></td>
+                    <td><input type="email" id="email" name="email" placeholder="Unesi email" required></td>
+                </tr>
+                <tr>
+                    <td><label for="coll">College</label></td>
+                    <td><select name="college" id="coll" label="Select college">
+                            <option value="ftn">Fakultet teh nauka</option>
+                            <option value="pravni">Pravni fakultet</option>
+                            <option value="ekonomcki">Ekonomski fakultet</option>
+                            <option value="medicinski">Medicinski Fakultet</option>
+                        </select></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td><input type="submit" id="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+</body>
+</html>
